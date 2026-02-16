@@ -1465,7 +1465,7 @@ THREE.MapControls.prototype.constructor = THREE.MapControls;
 
   const viewport = document.getElementById('viewport');
   const renderer = new THREE.WebGLRenderer({ antialias: true });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 3));
   viewport.appendChild(renderer.domElement);
 
   const camera = new THREE.PerspectiveCamera(50, 1, 0.1, 120);
